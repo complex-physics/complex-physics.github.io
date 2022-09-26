@@ -1,898 +1,878 @@
-<!--
-	作者：Sariay
-	时间：2018-08-26
-	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
--->
-<!DOCTYPE html>
-<html class="html-loading">
-		
 
-<head>
-	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <title>
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>overview · Sample GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="JP">
+        
+        
     
-      JP
+    <link rel="stylesheet" href="gitbook/style.css">
+
     
-  </title>
-  <meta name="author" content="John Doe">
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-	<!-- favicon -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-katex-plus/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
 
-  <!-- css -->
-  
-<link rel="stylesheet" href="/css/Annie.css">
+    
 
-  
-  <!-- jquery -->
-	
-<script src="/plugin/jquery/jquery.min.js"></script>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
 
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
-<script>
-    const CONFIG_BGIMAGE = {
-      mode: 'normal',
-      normalSrc: '/img/header-bg.jpg',
-      randomYouMax: 110,
-      randomYouSrc: 'https://sariay.github.io/Random-img/',
-	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
-	  preloaderEnable: true
-    }
-	
-    const CONFIG_LEACLOUD_COUNT = {
-      enable: false,
-	  appId: 'AU8...',
-	  appKey: '4cU...',
-	  serverURLs: 'http' || ' '
-    }
-  </script>
-<meta name="generator" content="Hexo 5.4.0"></head>
-	<body>
-		<!-- Preloader -->
+    
+    <link rel="next" href="Chapter01/Chapter01.html" />
+    
+    
 
-	<div id="preloader">
-		<div class="pre-container">
-			
-				<div class="cyclic">
-					<div><span></span></div>
-					<div><span></span></div>
-					<div><span></span></div>
-					<div><span></span></div>
-				</div>
-						
-		</div>
-	</div>
-
-
-<!-- header -->
-<header class="fixbackground bg-pan-br">
-	<div class="mask">
-		<!-- motto -->
-		<div class="h-body">	
-			
-		</div>
-		
-		<!-- others: such as time... -->			
-		<div class="h-footer">
-			<a href="javascript:;" id="read-more" class="scroll-down">
-				<span class="icon-anchor1 animation-scroll-down"></span>
-			</a>
-		</div>
-	</div>
-</header>
-
-<div id="navigation-hide">
-	<!-- Progress bar -->
-	<div id="progress-bar"></div>
-
-	<!-- Progress percent -->
-	<div id="progress-percentage"><span>0.0%</span></div>
-
-	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
-
-	<!-- Page title -->
-	<p>
-		
-			Home
-		
-	</p>
-
-	
-	
-
-	<!-- Nav trigger for navigation-H-->
-	<a class="nav-trigger"><span></span></a>
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
 </div>
 
-<!-- Navigation in div(id="navigation-H") -->
-<nav class="nav-container" id="cd-nav">
-	<div class="nav-header">
-		<span class="logo"> 
-			<img src="/img/logo.png">
-		</span>
-		<a href="javascript:;" class="nav-close"></a>
-	</div>
-	
-	<div class="nav-body">
-		<ul id="global-nav">
-	
-		<li class="menu-home">
-			<a href="/" class="menu-item-home" target="_blank">Home</a>
-		</li>
-		
-	
-		<li class="menu-archive">
-			<a href="/archives" class="menu-item-archive" target="_blank">Archive</a>
-		</li>
-		
-	
-		<li class="menu-categories">
-			<a href="/categories" class="menu-item-categories" target="_blank">Category</a>
-		</li>
-		
-	
-		<li class="menu-tags">
-			<a href="/tags" class="menu-item-tags" target="_blank">Tag</a>
-		</li>
-		
-	
-		<li class="menu-about">
-			<a href="/about" class="menu-item-about" target="_blank">About</a>
-		</li>
-		
-	
+            
+                <nav role="navigation">
+                
 
-	
-		<li class="menu-search">
-			<a href="javascript:;" class="popup-trigger">Search</a>
-		</li>
-	
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Chapter01/Chapter01.html">
+            
+                <a href="Chapter01/Chapter01.html">
+            
+                    
+                    01quantum circuit model 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Chapter02/Chapter02.html">
+            
+                <a href="Chapter02/Chapter02.html">
+            
+                    
+                    02 Topological quantum computing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Chapter03/Chapter03.html">
+            
+                <a href="Chapter03/Chapter03.html">
+            
+                    
+                    03 Quantum walks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Chapter03/section3_1.html">
+            
+                <a href="Chapter03/section3_1.html">
+            
+                    
+                    QW meet Physics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Chapter04/Chapter04.html">
+            
+                <a href="Chapter04/Chapter04.html">
+            
+                    
+                    04 Quantum adiabatic/annealing computations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Chapter05/Chapter05.html">
+            
+                <a href="Chapter05/Chapter05.html">
+            
+                    
+                    05 Measurement based quantum computation 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Chapter06/Chapter06.html">
+            
+                <a href="Chapter06/Chapter06.html">
+            
+                    
+                    06 QAOA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Chapter07/Chapter07.html">
+            
+                <a href="Chapter07/Chapter07.html">
+            
+                    
+                    07 QNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Chapter08/Chapter08.html">
+            
+                <a href="Chapter08/Chapter08.html">
+            
+                    
+                    08 HHL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Chapter09/Chapter09.html">
+            
+                <a href="Chapter09/Chapter09.html">
+            
+                    
+                    09 Variational Algorithms 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="Chapter10/Chapter10.html">
+            
+                <a href="Chapter10/Chapter10.html">
+            
+                    
+                    10 Quantum error correction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="Chapter11/Chapter11.html">
+            
+                <a href="Chapter11/Chapter11.html">
+            
+                    
+                    11 Superconducting circuits 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
 </ul>
-	</div>
-	
-	<div class="nav-footer">
-		<ul id="global-social">
-			
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >overview</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#notes-on-quantum-computation"><b>1. </b>Notes on Quantum Computation</a></li><li><span class="title-icon "></span><a href="#topics"><b>2. </b>Topics</a></li><li><span class="title-icon "></span><a href="#motivation"><b>3. </b>Motivation</a></li><li><span class="title-icon "></span><a href="#commentary-on-references"><b>4. </b>Commentary on References</a></li><ul><li><span class="title-icon "></span><a href="#researcher-group-and-institute"><b>4.1. </b>Researcher, Group and Institute</a></li><ul><li><span class="title-icon "></span><a href="#institute"><b>4.1.1. </b>Institute</a></li></ul><li><span class="title-icon "></span><a href="#conferences--workshops"><b>4.2. </b>Conferences &amp; Workshops</a></li><ul><li><span class="title-icon "></span><a href="#course"><b>4.2.1. </b>course</a></li></ul><li><span class="title-icon "></span><a href="#general-references"><b>4.3. </b>General References</a></li><ul><li><span class="title-icon "></span><a href="#book"><b>4.3.1. </b>Book</a></li><li><span class="title-icon "></span><a href="#lecture"><b>4.3.2. </b>Lecture</a></li></ul><li><span class="title-icon "></span><a href="#references-on-special-topics"><b>4.4. </b>References on special topics</a></li><ul><li><span class="title-icon "></span><a href="#algorithms"><b>4.4.1. </b>Algorithms</a></li><li><span class="title-icon "></span><a href="#ai"><b>4.4.2. </b>AI</a></li><li><span class="title-icon "></span><a href="#topological-quantum-computation"><b>4.4.3. </b>Topological Quantum Computation</a></li><li><span class="title-icon "></span><a href="#quantum-advantage"><b>4.4.4. </b>Quantum Advantage</a></li><li><span class="title-icon "></span><a href="#linear-system"><b>4.4.5. </b>Linear system</a></li><li><span class="title-icon "></span><a href="#error-correction--stabilizer-codes"><b>4.4.6. </b>Error correction &amp; stabilizer codes</a></li><li><span class="title-icon "></span><a href="#stabilizer-codes"><b>4.4.7. </b>stabilizer codes</a></li><li><span class="title-icon "></span><a href="#programming"><b>4.4.8. </b>Programming</a></li></ul></ul></ul></div><a href="#notes-on-quantum-computation" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="notes-on-quantum-computation"><a name="notes-on-quantum-computation" class="anchor-navigation-ex-anchor" href="#notes-on-quantum-computation"><i class="fa fa-link" aria-hidden="true"></i></a>1. Notes on Quantum Computation</h1>
+<!-- toc -->
+<ul>
+<li><a href="#topics">Topics</a></li>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#commentary-on-references">Commentary on References</a><ul>
+<li><a href="#researcher,-group-and-institute">Researcher, Group and Institute</a>
+  ~ <a href="#john-preskill">John Preskill</a>
+  ~ <a href="#alexei-kitaev">Alexei Kitaev</a>
+  ~ <a href="#andrew-childs">Andrew Childs</a>
+  ~ <a href="#scott-aaronson">Scott Aaronson</a><ul>
+<li><a href="#institute">Institute</a></li>
 </ul>
-
-	</div>
-</nav>
-			
-		<!--main-->
-		<main>
-			
-
-
-
-	<!--pure style-->
-	<div class="layout-pure">
-	<div id="layout-pure">	
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2018/08/27/A01_guide/" itemprop="url">
-		导览
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							记录论文阅读笔记
-对于成体系的笔记，单篇的博客不再适合，因此可以用Gitbook或Docsify等文档开整理。
-
-
-我所理解的量子计算
-
-我所理解的冷原子物理
-
-我所理解的拓扑物质
-
-强关联系统中的数值计算
-
-综述类
-
-
-《Emergent particles and gauge fields in quantum matter》Ben J. Powell 2020
-
-《Quantum computing 40 years later》J Preskill 2021
-
-学位论文
-
-
-《磁阻挫系统中自旋动力学的理论研究》2019
-
-
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2018/08/27/A01_guide/" itemprop="url">
-		<time datetime="2018-08-27T12:16:19.000Z" itemprop="datePublished">
-	  		2018-08-27
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2018/08/27/A01_guide/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/10/07/paper_review02_StronalyCorrelated/" itemprop="url">
-		Emergent particles and gauge fields in quantum matter
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							
-强关联物质可以形成自己的宇宙，在低能近似下演生出他们自己的粒子和场。
-
-概览
-关于强关联系统的一篇有趣的综述。涉及的内容包括了强关联系统研究的很多主要方面，而且在物理上写得很清楚。
-首先介绍凝聚态物理领域的“标准模型”，这个模型是建立在朗道的基本原理上
-
-绝热连续
-自发性对称性破缺
-
-这些基本原理推演出的概念有
-
-准粒子
-Nambu-Goldstone玻色子
-Anderson-Higgs机制
-序参量中的拓扑缺陷
-
-接下来描写穿越“标准模型”的凝聚态物理。中心概念是量子关联（纠缠）和拓扑。这些概念会导致分数量子数的分数化粒子。这些粒子有很奇异的性质
-...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/10/07/paper_review02_StronalyCorrelated/" itemprop="url">
-		<time datetime="2021-10-07T12:16:19.000Z" itemprop="datePublished">
-	  		2021-10-07
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/10/07/paper_review02_StronalyCorrelated/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/06/22/paper_review03_QuantumComputation/" itemprop="url">
-		Quantum computing 40 years later
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							
-Preskill回顾量子计算40年
-
-[TOC]
-概览
-参考
-Quantum computing 40 years later
-
-arXiv:2106.10522
-
-前言
-Forty years ago, Richard Feynman proposed harnessing quantum physics to build a more powerful kind of computer. Realizing Feynman's vision is one of the grand challenges facing 21st century science a...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/06/22/paper_review03_QuantumComputation/" itemprop="url">
-		<time datetime="2021-06-22T12:16:19.000Z" itemprop="datePublished">
-	  		2021-06-22
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/06/22/paper_review03_QuantumComputation/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2021/05/04/helloworld/" itemprop="url">
-		磁阻挫系统中自旋动力学的理论研究
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							本文研究对象是自旋液体，目标是寻找合适的材料或者体系来实现自旋液体。
-
-方法：线性自旋波理论 —— \(\alpha- RuCl _{3}\) 低能有效交换模型
-方法：变分蒙特卡洛—— 反铁磁型 \(J_{1}-J_{2}\) 海森堡模型
-
-低能有效模型
-对于微扰型哈密顿量 \[
-H(\lambda)=H_{0}+\lambda H_{1}
-\] 通过正则变换 \[
-\begin{align}
-H_{S}(\lambda) &amp;=e^{-\lambda S} H(\lambda) e^{\lambda . S} \\
-&amp; =H(\lambda)+[H(...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2021/05/04/helloworld/" itemprop="url">
-		<time datetime="2021-05-03T17:01:26.000Z" itemprop="datePublished">
-	  		2021-05-04
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2021/05/04/helloworld/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2018/08/28/math/" itemprop="url">
-		数学公式测试
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							Quick Start
-We wish to evaluate: \[
-\langle\Psi|H| \Psi\rangle
-\] We will split the Hamiltonian into 5 parts, and evaluate these separately: \[
-\langle\Psi|H| \Psi\rangle=\left\langle\Psi\left|H_{t}\right| \Psi\right\rangle+\left\langle\Psi\left|H_{\mu}\right| \Psi\right\rangle+\left\langle\P...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2018/08/28/math/" itemprop="url">
-		<time datetime="2018-08-28T12:16:19.000Z" itemprop="datePublished">
-	  		2018-08-28
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2018/08/28/math/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2016/11/02/topology07_book_TISC09/" itemprop="url">
-		TS笔记9 时间反演对称性的拓扑绝缘体
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							[TOC]
-参考
-
-《Topological Insulators and Topological Superconductors》 - B. Andrei Bernevig
-Chapter-9 Time-Reversal-Invariant Topological Insulators
-
-Chapter-9 Time-Reversal-Invariant Topological Insulators
-The Haldane model of a Chern insulator shows that a nontrivial insulator with nonzero H...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2016/11/02/topology07_book_TISC09/" itemprop="url">
-		<time datetime="2016-11-02T06:09:53.000Z" itemprop="datePublished">
-	  		2016-11-02
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2016/11/02/topology07_book_TISC09/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2016/11/02/topology07_book_TISC08/" itemprop="url">
-		TS笔记8 Chern Insulator
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							[TOC]
-参考
-
-《Topological Insulators and Topological Superconductors》 - B. Andrei Bernevig
-Chapter-8 Simple Models for the Chern Insulator
-Chapter-9
-
-Chapter-8 Simple Models for the Chern Insulator
-We are now well prepared to discuss the simplest model of a topological insulator, the Chern i...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2016/11/02/topology07_book_TISC08/" itemprop="url">
-		<time datetime="2016-11-02T06:08:53.000Z" itemprop="datePublished">
-	  		2016-11-02
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2016/11/02/topology07_book_TISC08/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2016/11/02/topology07_book_TISC07/" itemprop="url">
-		TS笔记7 六角晶格
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							[TOC]
-参考
-
-《Topological Insulators and Topological Superconductors》 - B. Andrei Bernevig
-Chapter-7 Graphene
-
-Chapter-7 Graphene
-In the previous chapters, we have primarily investigated phenomena on the square lattice. In this chapter, we switch gears and look at another two-dimensional latt...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2016/11/02/topology07_book_TISC07/" itemprop="url">
-		<time datetime="2016-11-02T06:07:53.000Z" itemprop="datePublished">
-	  		2016-11-02
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2016/11/02/topology07_book_TISC07/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-			<div class="post" id="post">
-				<div class="post-text">
-					<div class="post-title" id="post-title-index">			
-						
-	<a href="/2016/11/02/topology07_book_TISC05/" itemprop="url">
-		TS笔记5 Magnetic Field on the Square Lattice
-	</a>
-
-					</div>
-
-					<div class="post-content">
-						
-							[TOC]
-参考
-
-《Topological Insulators and Topological Superconductors》 - B. Andrei Bernevig
-Chapter-5 Magnetic Field on the Square Lattice
-
-Chapter-5 Magnetic Field on the Square Lattice
-Historically, the first system exhibiting topological behavior was the quantum Hall effect. When placed in ...
-						
-					</div>
-					
-					<div class="post-meta">
-						<span>
-							Posted on
-							<i>
-								
-
-
-
-
-
-
-	<a href="/2016/11/02/topology07_book_TISC05/" itemprop="url">
-		<time datetime="2016-11-02T06:05:53.000Z" itemprop="datePublished">
-	  		2016-11-02
-	  </time>
-	</a> 
-
-							</i>
-						</span>
-						
-						
-
-
-
-						
-							<span class="right">      	
-								<a href="/2016/11/02/topology07_book_TISC05/" title="View all" external="false">View all</a>	
-							</span>
-						
-					</div>
-				</div>
-			</div>
-		
-	</div>
-
-	
-	<div id="pagination">
-		
-	</div>
-
-	
-
-</div>
-
-
-		</main>
-
-		<!--footer-->
-		<footer>
-	<div id="navigation-show">
-		<ul id="global-nav">
-	
-		<li class="menu-home">
-			<a href="/" class="menu-item-home" target="_blank">Home</a>
-		</li>
-		
-	
-		<li class="menu-archive">
-			<a href="/archives" class="menu-item-archive" target="_blank">Archive</a>
-		</li>
-		
-	
-		<li class="menu-categories">
-			<a href="/categories" class="menu-item-categories" target="_blank">Category</a>
-		</li>
-		
-	
-		<li class="menu-tags">
-			<a href="/tags" class="menu-item-tags" target="_blank">Tag</a>
-		</li>
-		
-	
-		<li class="menu-about">
-			<a href="/about" class="menu-item-about" target="_blank">About</a>
-		</li>
-		
-	
-
-	
-		<li class="menu-search">
-			<a href="javascript:;" class="popup-trigger">Search</a>
-		</li>
-	
+</li>
+<li><a href="#conferences-&amp;-workshops">Conferences &amp; Workshops</a><ul>
+<li><a href="#course">course</a></li>
 </ul>
-	</div>
+</li>
+<li><a href="#general-references">General References</a><ul>
+<li><a href="#book">Book</a></li>
+<li><a href="#lecture">Lecture</a></li>
+</ul>
+</li>
+<li><a href="#references-on-special-topics">References on special topics</a><ul>
+<li><a href="#algorithms">Algorithms</a></li>
+<li><a href="#ai">AI</a>
+~ <a href="#qnn">QNN</a></li>
+<li><a href="#topological-quantum-computation">Topological Quantum Computation</a></li>
+<li><a href="#quantum-advantage">Quantum Advantage</a>
+~ <a href="#quantum-inspired-algorithms">Quantum-inspired algorithms</a></li>
+<li><a href="#linear-system">Linear system</a></li>
+<li><a href="#error-correction-&amp;-stabilizer-codes">Error correction &amp; stabilizer codes</a>
+~ <a href="#experiment-realizing">Experiment Realizing</a></li>
+<li><a href="#stabilizer-codes">stabilizer codes</a>
+~ <a href="#finite-temperature">Finite Temperature</a></li>
+<li><a href="#programming">Programming</a>
+~ <a href="#language">language</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1 id="topics"><a name="topics" class="anchor-navigation-ex-anchor" href="#topics"><i class="fa fa-link" aria-hidden="true"></i></a>2. Topics</h1>
+<p><img src="https://jptanjing.oss-cn-beijing.aliyuncs.com/jptanjing/QC/qcoverview0823.JPG" alt="qcoverview0823" style="zoom:67%;"></p>
+<p>Traditional textbooks on quantum computing usually start with qubits and the quantum gates, and then use quantum gates to build quantum algorithms. This process actually belongs to the quantum circuit model. There are other models that are equivalent to the quantum circuit model, such as </p>
+<ol>
+<li>Topological quantum computing</li>
+<li>Quantum adiabatic/annealing computations</li>
+<li>Measurement based quantum computation</li>
+<li>Quantum walk</li>
+</ol>
+<p>These models proved to be universal quantum computing. Although they are equivalent to the quantum Turing machine. This equivalence need not hold exactly for practical quantum computers, since the overhead of simulation may be different for different algorithms. For example, the topological quantum computing are good at AJL algorithm since AJL algorithm was derived by considering the knot as the trace closure of a braid, which are similar to braiding of anyons in topological quantum computing. It should be noted that the models of quantum computing mentioned here refer to theoretical models, and the same model can be implemented with different physical systems. Candidates for physical realizations of quantum compution:</p>
+<ol>
+<li>Superconducting circuits </li>
+<li>Trapped ions </li>
+<li>Neutral atoms in optical lattices</li>
+<li>Optical (Linear or Nonlinear)</li>
+<li>Nuclear magnetic resonance(NMR) </li>
+<li>Colour centres (e.g., NV-centers in diamond)</li>
+</ol>
+<p>In this note, I will make introductions to these models and physical realizations, some just briefly and some in more detail. One of the challenges in constructing quantum computers is that the noise in the environment will destroy the coherence of quantum states. Quantum error correction will be necessary to build reliable quantum computers.</p>
+<ul>
+<li>Quantum error correction </li>
+</ul>
+<p>A quantum computer is of little use without an algorithm to run on it. I will also introduce some quantum algorithms and their potential applications.</p>
+<ul>
+<li>Quantum algorithms in traditional textbooks<ol>
+<li>Deutsch-Josza Algorithm</li>
+<li>Quantum Fourier Transform</li>
+<li>Quantum Phase Estimation</li>
+<li>Shor algorithm</li>
+<li>Grover algorithm</li>
+</ol>
+</li>
+<li>Advanced algorithms<ol>
+<li>QAOA (Quantum Approximate Optimization Algorithm) </li>
+<li>HHL algorithm for linear systems</li>
+<li>VQA (variational Quantum Algorithm)</li>
+<li>QNN (Quantum Neural Networks)</li>
+</ol>
+</li>
+</ul>
+<p>Potential applications</p>
+<ol>
+<li>Simulation of quantum systems</li>
+<li>Search problems</li>
+<li>Machine learning</li>
+<li>Cryptography</li>
+</ol>
+<h1 id="motivation"><a name="motivation" class="anchor-navigation-ex-anchor" href="#motivation"><i class="fa fa-link" aria-hidden="true"></i></a>3. Motivation</h1>
+<p>This note mainly records the process of my learning quantum computing. This is an unfinished, ongoing note. Part of it comes from my participation in Professor <a href="https://sites.google.com/view/han-hsuan-lins-homepage/home/QC" target="_blank">Lin</a>&apos;s group meetings, the presentation I gave at the group meetings and listening to other people&apos;s speeches.</p>
+<p>The concept of &apos;More is different&apos; by Anderson broken my high school naive thinking in reductionism, which was one of my motivation to choose physics as career. However, it also re-built my new motivation in condensed matter physics to explore the barrier between microcosmic principle and mesoscopic. Quantum computation is a powerful tool in this exploration. </p>
+<p>The teaching philosophy to be used later to develop notes to lectures</p>
+<blockquote>
+<p>&quot;For me, mathematics is a collection of examples; a theorem is a statement about a collection of examples and the purpose of proving theorems is to classify and explain the examples.&quot;</p>
+<p>&#x2014;&#x2014; John B. Conway</p>
+</blockquote>
+<h1 id="commentary-on-references"><a name="commentary-on-references" class="anchor-navigation-ex-anchor" href="#commentary-on-references"><i class="fa fa-link" aria-hidden="true"></i></a>4. Commentary on References</h1>
+<p>In this part, I will introduce some scholars and references that I am interested in in the field of quantum computing.</p>
+<ol>
+<li>Researchers, Groups and Institutes</li>
+<li>Conferences &amp; Workshops</li>
+<li>General References</li>
+<li>References on special topics</li>
+</ol>
+<h2 id="researcher-group-and-institute"><a name="researcher-group-and-institute" class="anchor-navigation-ex-anchor" href="#researcher-group-and-institute"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. Researcher, Group and Institute</h2>
+<ol>
+<li><p>Han Hsuan Lin</p>
+<ul>
+<li><a href="https://sites.google.com/view/han-hsuan-lins-homepage/home/QC" target="_blank">Intro to Quantum Computation</a></li>
+<li><a href="https://scholar.google.com.tw/citations?hl=zh-CN&amp;user=0yXabmcAAAAJ" target="_blank">Google Scholar</a></li>
+</ul>
+</li>
+<li><p>Man-Hong Yung</p>
+<ul>
+<li><a href="https://yung.phy.sustech.edu.cn/" target="_blank">HomePage</a> and <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=vjRoj1gAAAAJ&amp;view_op=list_works&amp;alert_preview_top_rm=2&amp;sortby=pubdate" target="_blank">Google Scholar</a></li>
+<li><a href="https://www.koushare.com/video/videodetail/11838" target="_blank">course</a> &#x548C; <a href="https://www.koushare.com/live/QuantumGroup" target="_blank">Group Meeting</a></li>
+</ul>
+</li>
+<li><p>Deng dongling</p>
+<ul>
+<li><a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=fsR0U0YAAAAJ&amp;view_op=list_works&amp;alert_preview_top_rm=2&amp;sortby=pubdate" target="_blank">Google Scholar</a> QML</li>
+</ul>
+</li>
+<li>Ewin Tang<ul>
+<li>quantum-inspired classical algorithm<ul>
+<li><a href="https://ewintang.com/" target="_blank">Home page</a> </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Duan luming</p>
+<ul>
+<li><a href="https://scholar.google.com/citations?user=ULkJQpkAAAAJ&amp;hl=en" target="_blank">Google Scholar</a>  </li>
+</ul>
+</li>
+<li><p>Umesh Vazirani</p>
+<ul>
+<li><p><a href="https://people.eecs.berkeley.edu/~vazirani/" target="_blank">Home Page</a></p>
+</li>
+<li><p>defined a model of <strong>quantum Turing machines</strong> which was amenable to <strong>complexity</strong> based analysis <a href="https://arxiv.org/abs/quant-ph/9701001" target="_blank">arXiv:quant-ph/9701001</a></p>
+</li>
+<li>quantum computers cannot solve <strong>NP-complete</strong> problems in polynomial time</li>
+</ul>
+</li>
+<li><p>David Deutsch</p>
+<ul>
+<li><a href="https://www.daviddeutsch.org.uk/" target="_blank">Home Page</a></li>
+<li>Deutsch&#x2013;Jozsa algorithm</li>
+<li>formulating a description for a quantum Turing machine <a href="https://www.cs.princeton.edu/courses/archive/fall04/cos576/papers/deutsch85.pdf" target="_blank">1985 Quantum Theory, the Church-Turing Principle and the Universal Quantum Computer</a></li>
+<li>Quantum Circuits (1989) <a href="https://royalsocietypublishing.org/doi/10.1098/rspa.1989.0099" target="_blank">Quantum Computational Networks</a> </li>
+</ul>
+</li>
+</ol>
+<h4 id="john-preskill"><a name="john-preskill" class="anchor-navigation-ex-anchor" href="#john-preskill"><i class="fa fa-link" aria-hidden="true"></i></a>John Preskill</h4>
+<ul>
+<li><a href="http://theory.caltech.edu/~preskill/" target="_blank">Home Page</a></li>
+</ul>
+<p>Lecture</p>
+<ol>
+<li>Ph219/CS219 Quantum Computation Lecture<ul>
+<li><a href="https://www.youtube.com/playlist?list=PL0ojjrEqIyPy-1RRD8cTD_lF1hflo89Iu" target="_blank">vidos</a></li>
+</ul>
+</li>
+</ol>
+<p>Review paper</p>
+<ol>
+<li>Quantum Computing in the NISQ era and beyond<ul>
+<li><a href="https://arxiv.org/abs/1801.00862" target="_blank">link: ArXiv</a></li>
+</ul>
+</li>
+<li>Quantum computing 40 years later<ul>
+<li><a href="https://arxiv.org/abs/2106.10522" target="_blank">link: ArXiv</a></li>
+</ul>
+</li>
+</ol>
+<h4 id="alexei-kitaev"><a name="alexei-kitaev" class="anchor-navigation-ex-anchor" href="#alexei-kitaev"><i class="fa fa-link" aria-hidden="true"></i></a>Alexei Kitaev</h4>
+<p>Part of Kitaev&apos;s work in the field of quantum computing</p>
+<ol>
+<li><p>The concept of the topological quantum computer</p>
+<ul>
+<li>Fault-tolerant quantum computation by anyons <a href="https://arxiv.org/abs/quant-ph/9707021v1" target="_blank">link</a></li>
+<li>Topological phases and quantum computation <a href="https://arxiv.org/abs/0904.2771" target="_blank">link</a></li>
+</ul>
+</li>
+<li><p>How to encode quantum information and protect it from noise using &#x201C;topological&#x201D; many-body systems, for example, the Majorana chain. </p>
+<ul>
+<li>Unpaired Majorana fermions in quantum wires <a href="https://arxiv.org/abs/cond-mat/0010440" target="_blank">link</a></li>
+</ul>
+</li>
+<li><p>introducing the quantum phase estimation algorithm</p>
+<ul>
+<li>Quantum measurements and the Abelian Stabilizer Problem <a href="https://arxiv.org/abs/quant-ph/9511026" target="_blank">link</a></li>
+</ul>
+</li>
+</ol>
+<h4 id="andrew-childs"><a name="andrew-childs" class="anchor-navigation-ex-anchor" href="#andrew-childs"><i class="fa fa-link" aria-hidden="true"></i></a>Andrew Childs</h4>
+<ul>
+<li><p><a href="https://www.cs.umd.edu/~amchilds/" target="_blank">Home page</a></p>
+</li>
+<li><p>quantum walk</p>
+<ul>
+<li>for spatial search<ul>
+<li>Spatial search by quantum walk <a href="https://arxiv.org/pdf/quant-ph/0306054.pdf" target="_blank">arXiv:quant-ph/0306054</a></li>
+</ul>
+</li>
+<li>universal computation <ul>
+<li>Universal computation by quantum walk <a href="https://arxiv.org/abs/0806.1972" target="_blank">arXiv:0806.1972</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>developed quantum algorithms<ul>
+<li>algebraic problems <ul>
+<li>Quantum algorithms for algebraic problems <a href="https://arxiv.org/abs/0812.0380" target="_blank">arXiv:0812.0380</a></li>
+</ul>
+</li>
+<li>adiabatic quantum computation <ul>
+<li>Robustness of adiabatic quantum computation <a href="https://arxiv.org/abs/quant-ph/0108048" target="_blank">arXiv:quant-ph/0108048</a></li>
+</ul>
+</li>
+<li>Hamiltonian simulation</li>
+</ul>
+</li>
+</ul>
+<h4 id="scott-aaronson"><a name="scott-aaronson" class="anchor-navigation-ex-anchor" href="#scott-aaronson"><i class="fa fa-link" aria-hidden="true"></i></a>Scott Aaronson</h4>
+<ul>
+<li><a href="https://www.scottaaronson.com/" target="_blank">Home page</a></li>
+<li>computational complexity theory<ul>
+<li><a href="https://complexityzoo.net/Complexity_Zoo" target="_blank">Complexity Zoo</a></li>
+</ul>
+</li>
+<li><a href="https://www.scottaaronson.com/blog/" target="_blank">Blog</a></li>
+<li>Book&#x300A;Quantum Computing since Democritus&#x300B;</li>
+</ul>
+<h3 id="institute"><a name="institute" class="anchor-navigation-ex-anchor" href="#institute"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.1. Institute</h3>
+<ol>
+<li>Institute for Quantum Information at the California Institute of Technology <ul>
+<li><a href="https://web.archive.org/web/20151108075545/http://www.iqi.caltech.edu/people.html" target="_blank">IQI</a> Faculty Jeff Kimble; Alexei Kitaev; John Preskill; Eric Rains; Gil Refael; Leonard Schulman</li>
+<li><a href="https://iqim.caltech.edu/people/faculty/" target="_blank">IQIM</a> Institute for Quantum Information and Matter, a National Science Foundation Physics Frontiers Center</li>
+</ul>
+</li>
+<li>Institute for Quantum Computing (University of Waterloo) Canada<ul>
+<li><a href="https://www.youtube.com/c/QuantumIQC/about" target="_blank">YT</a></li>
+<li><a href="https://uwaterloo.ca/institute-for-quantum-computing/" target="_blank">Home</a></li>
+</ul>
+</li>
+<li><a href="https://iiis.tsinghua.edu.cn/list-434-1.html" target="_blank">Tsinghua University Center for Quantum Information </a></li>
+<li>Quantum Information Society (Oxford University)<ul>
+<li><a href="https://www.youtube.com/c/QuantumInformationSociety/about" target="_blank">YT</a></li>
+</ul>
+</li>
+<li><p>Department of Computer Science and Technology at Nanjing University</p>
+<ul>
+<li><a href="http://tcs.nju.edu.cn/wiki/index.php/Main_Page" target="_blank">Home</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="conferences--workshops"><a name="conferences--workshops" class="anchor-navigation-ex-anchor" href="#conferences--workshops"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. Conferences &amp; Workshops</h2>
+<ol>
+<li>QIP Conferences (Quantum Information Processing)<ul>
+<li><a href="https://www.youtube.com/channel/UCfN1uBQkn_FIp9EpkHZFi2w" target="_blank">QIP2022 Youtube list</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PL5DZ45amUsqIaqE9EIemfc9LzeWzXnGY_" target="_blank">QIP2021 Youtube list</a> </li>
+<li><a href="https://www.koushare.com/video/meetingVideo?mid=157" target="_blank">QIP2020 koushare list</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLGdMsPGuoD25wLgnY7RBoTAxsnQEMsNA0" target="_blank">QIP2019 Youtube list</a></li>
+</ul>
+</li>
+<li><a href="https://q2b2018.qcware.com/by-type" target="_blank">Q2B: QUANTUM FOR BUSINESS 2018</a> </li>
+<li>The 10th International Workshop on Solid-State Quantum Computing <ul>
+<li>2021 in CityU</li>
+<li><a href="https://www.koushare.com/video/meetingdetail/455" target="_blank">videos</a> </li>
+</ul>
+</li>
+<li><a href="https://www.koushare.com/live/QuantumGroup" target="_blank">&#x91CF;&#x5B50;&#x7EC4;&#x4F1A;&#x4E00;&#x8D77;&#x5F00;(SUSTech)</a></li>
+<li><a href="https://www.koushare.com/video/meetingdetail/297" target="_blank">AMSS-UTS&#x91CF;&#x5B50;&#x8BA1;&#x7B97;&#x524D;&#x6CBF;&#x7814;&#x8BA8;&#x4F1A;</a> </li>
+<li><a href="https://www.koushare.com/topicIndex/i/EGG62D2S" target="_blank">2022&#x91CF;&#x5B50;&#x8BA1;&#x7B97;&#x57FA;&#x7840;&#x4E0E;&#x524D;&#x6CBF;&#x8BB2;&#x4E60;&#x73ED;</a></li>
+</ol>
+<h3 id="course"><a name="course" class="anchor-navigation-ex-anchor" href="#course"><i class="fa fa-link" aria-hidden="true"></i></a>4.2.1. course</h3>
+<ol>
+<li>Quantum Computation Ph219/CS219  John Preskill <ul>
+<li><a href="http://theory.caltech.edu/~preskill/ph219/ph219_2018-19" target="_blank">home page</a></li>
+<li><a href="https://www.youtube.com/channel/UCeq4xfwNE6eDK3k1vTfZK8g" target="_blank">vidos</a></li>
+</ul>
+</li>
+<li><a href="https://www.chalmers.se/en/centres/wacqt/graduate%20school/aqa/Pages/default.aspx" target="_blank">Advanced Quantum Algorithms</a> 2019<ul>
+<li>(WACQT) Wallenberg Centre for Quantum Technology</li>
+</ul>
+</li>
+</ol>
+<h2 id="general-references"><a name="general-references" class="anchor-navigation-ex-anchor" href="#general-references"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. General References</h2>
+<h3 id="book"><a name="book" class="anchor-navigation-ex-anchor" href="#book"><i class="fa fa-link" aria-hidden="true"></i></a>4.3.1. Book</h3>
+<ol>
+<li>Mikio Nakahara, Tetsuo Ohmi.&#x300A;Quantum Computing. From Linear Algebra to Physical Realizations &#x300B;</li>
+<li>David McMahon. &#x300A;Quantum Computing Explained &#x300B;</li>
+<li>Michael A Nielsen and Isaac Chuang.&#x300A;Quantum computation and quantum information&#x300B;, 2002</li>
+<li>Giuliano Benenti.&#x300A;Principles of Quantum Computation and Information: Basic Tools and Special Topics&#x300B;</li>
+<li>Ivan B. Djordjevic&#x300A;Quantum Information Processing, Quantum Computing, and Quantum Error Correction: An Engineering Approach&#x300B;</li>
+</ol>
+<h3 id="lecture"><a name="lecture" class="anchor-navigation-ex-anchor" href="#lecture"><i class="fa fa-link" aria-hidden="true"></i></a>4.3.2. Lecture</h3>
+<ol>
+<li><a href="https://www.cs.umd.edu/~amchilds/qa/qa.pdf" target="_blank">Lecture Notes on Quantum Algorithms</a> Andrew M. Childs</li>
+<li>John Preskill (Caltech): <a href="http://theory.caltech.edu/~preskill/ph229/" target="_blank">Physics 219 Quantum Computation</a></li>
+<li><a href="https://www.chalmers.se/en/centres/wacqt/graduate%20school/aqa/Documents/FullLectureNotes.pdf" target="_blank">Advanced Quantum Algorithms</a>  Lecture by Giulia Ferrini, Anton Frisk Kockum, Laura Garc&#xED;a-&#xC1;lvarez, Pontus Vikst&#xE5;l (2020)</li>
+<li>Scott Aaronson</li>
+<li>Quantum Algorithm Implementations for Beginners <a href="https://arxiv.org/abs/1804.03719" target="_blank">arXiv:1804.03719</a> Los Alamos National Laboratory</li>
+</ol>
+<h2 id="references-on-special-topics"><a name="references-on-special-topics" class="anchor-navigation-ex-anchor" href="#references-on-special-topics"><i class="fa fa-link" aria-hidden="true"></i></a>4.4. References on special topics</h2>
+<h3 id="algorithms"><a name="algorithms" class="anchor-navigation-ex-anchor" href="#algorithms"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.1. Algorithms</h3>
+<ol>
+<li><a href="https://www.cs.umd.edu/~amchilds/qa/qa.pdf" target="_blank">Lecture Notes on Quantum Algorithms</a> Andrew M. Childs</li>
+<li>Quantum Algorithm Implementations for Beginners <a href="https://arxiv.org/abs/1804.03719" target="_blank">arXiv:1804.03719</a> Los Alamos National Laboratory</li>
+<li><a href="https://quantumalgorithmzoo.org/" target="_blank">Quantum Algorithm Zoo</a> <ul>
+<li><a href="https://www.qtumist.com/quantum-algorithm-zoo" target="_blank">&#x4E2D;&#x6587;&#x7248;</a> </li>
+</ul>
+</li>
+</ol>
+<h3 id="ai"><a name="ai" class="anchor-navigation-ex-anchor" href="#ai"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.2. AI</h3>
+<ol>
+<li>M. Schuld and F. Petruccione.&#x300A;Supervised learning with quantum computers. Springer&#x300B;, 2018</li>
+<li>Santanu Pattanayak &#x300A;Quantum Machine Learning With Python Using Cirq from Google Research and IBM Qiskit&#x300B;2020</li>
+</ol>
+<h4 id="qnn"><a name="qnn" class="anchor-navigation-ex-anchor" href="#qnn"><i class="fa fa-link" aria-hidden="true"></i></a>QNN</h4>
+<blockquote>
+<p>What is QNN </p>
+</blockquote>
+<ol>
+<li>Kak, S. (1995). &quot;On quantum neural computing&quot;. <em>Advances in Imaging and Electron Physics</em>. <strong>94</strong>: 259&#x2013;313. <a href="https://en.wikipedia.org/wiki/Doi_(identifier" target="_blank">doi</a>):<a href="https://doi.org/10.1016%2FS1076-5670(08" target="_blank">10.1016/S1076-5670(08)70147-2</a>70147-2)</li>
+<li>Efficient Learning for Deep Quantum Neural Networks (2020) <a href="https://arxiv.org/abs/1902.10445" target="_blank">arXiv:1902.10445</a> <ul>
+<li>Training deep quantum neural networks <a href="https://www.nature.com/articles/s41467-020-14454-2" target="_blank"><em>Nat Commun</em> <strong>11,</strong> 808 (2020)</a></li>
+</ul>
+</li>
+<li>On quantum neural networks 2021 <a href="https://arxiv.org/abs/2104.07106" target="_blank">arXiv:2104.07106</a><ul>
+<li>early definition of QNN &amp; modern definition of QNN</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>What problem QNN advantage in? </p>
+</blockquote>
+<ol>
+<li>The Power of Quantum Neural Networks 2020 <a href="https://arxiv.org/abs/2011.00027" target="_blank">arXiv:2011.00027</a></li>
+<li>Power of data in quantum machine learning 2021 <a href="https://arxiv.org/abs/2011.01938" target="_blank">arXiv:2011.01938</a></li>
+</ol>
+<blockquote>
+<p>What is &#xFF08;Barren Plateau&#xFF09;in QNN ?</p>
+</blockquote>
+<ol>
+<li><a href="https://www.nature.com/articles/s41467-018-07090-4" target="_blank">Barren plateaus in quantum neural network training landscapes</a></li>
+<li>Cost function dependent barren plateaus in shallow parametrized quantum circuits <a href="https://www.nature.com/articles/s41467-021-21728-w" target="_blank">Nature Communications 12, 1791 (2021)</a></li>
+<li>Trainability of Dissipative Perceptron-Based Quantum Neural Networks <a href="https://arxiv.org/pdf/2005.12458.pdf" target="_blank">arxiv.2005.12458</a></li>
+</ol>
+<blockquote>
+<p>What make&#xFF08;Barren Plateau&#xFF09;?</p>
+</blockquote>
+<ol>
+<li><a href="https://mp.weixin.qq.com/s/dTHKYjRzHW6lQWiZENsuEQ" target="_blank">explain</a></li>
+<li><a href="https://arxiv.org/pdf/2010.15968.pdf" target="_blank">arXiv: 2010.15968</a></li>
+</ol>
+<blockquote>
+<p>What is QCNN </p>
+</blockquote>
+<p>2019 Harve</p>
+<ul>
+<li><a href="https://www.nature.com/articles/s41567-019-0648-8" target="_blank">Nature Physics 15,1273-1278(2019)</a> Quantum convolutional neural networks</li>
+<li>A Tutorial on Quantum Convolutional Neural Networks (QCNN) <a href="https://arxiv.org/pdf/2009.09423.pdf" target="_blank">arxiv.2009.09423</a></li>
+<li><a href="https://www.tensorflow.org/quantum/tutorials/qcnn" target="_blank">TensorFlow implements QCNN</a> </li>
+</ul>
+<blockquote>
+<p>absence Barren Plateau in QCNN </p>
+</blockquote>
+<ol>
+<li><a href="https://journals.aps.org/prx/pdf/10.1103/PhysRevX.11.041011" target="_blank">Absence of Barren Plateaus in Quantum Convolutional Neural Networks</a></li>
+</ol>
+<h3 id="topological-quantum-computation"><a name="topological-quantum-computation" class="anchor-navigation-ex-anchor" href="#topological-quantum-computation"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.3. Topological Quantum Computation</h3>
+<ol>
+<li>&#x300A;Introduction To Topological Quantum Computation&#x300B;Pachos, Jiannis K.</li>
+<li>&#x300A;Quantum Computation with Topological Codes From Qubit to Topological Fault-Tolerance&#x300B; Keisuke Fujii </li>
+<li>Introduction to topological quantum matter  quantum computation by Stanescu, Tudor D  </li>
+<li>Topological Orders with Spins and Fermions Quantum Phases and Computation by Laura Ortiz Mart&#xED;n</li>
+<li>Topological Quantum Computation 2008 Conference Board of the Mathematical Sciences</li>
+</ol>
+<p>Review</p>
+<ol>
+<li>&#x300A;Introduction to topological quantum computation with non-Abelian anyons&#x300B; (2018) Bernard Field and Tapio Simula</li>
+<li>&#x300A;A Short Introduction to Topological Quantum Computation&#x300B; (2017) V.T. Lahtinen, J.K. Pachos  </li>
+<li>&#x300A;Non-Abelian Anyons and Topological Quantum Computation&#x300B;&#xFF08;2007&#xFF09;Chetan Nayak, Sankar Das Sarma  </li>
+</ol>
+<p>braiding</p>
+<ol>
+<li>Topologically protected gates for quantum computation with non-Abelian anyons in the Pfaffian quantum Hall state 2006 Lachezar S. Georgiev Phys. Rev. B <strong>74</strong>, 235112<ul>
+<li>How  braiding is equivalent to quantum gate</li>
+</ul>
+</li>
+<li>Universal quantum computation with ideal Clifford gates and noisy ancillas 2005  Sergey Bravyi and Alexei Kitaev Phys. Rev. A <strong>71</strong>, 022316<ul>
+<li>Universal</li>
+</ul>
+</li>
+</ol>
+<h3 id="quantum-advantage"><a name="quantum-advantage" class="anchor-navigation-ex-anchor" href="#quantum-advantage"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.4. Quantum Advantage</h3>
+<ol>
+<li>Scott Aaronson. 2015. <a href="https://scottaaronson.com/papers/qml.pdf" target="_blank">Read the fine print</a><ul>
+<li>New quantum algorithms promise an exponential speed-up for machine learning, clustering and finding patterns in big data. But to achieve a real speed-up, we need to delve into the details.</li>
+</ul>
+</li>
+<li>Demonstration of quantum advantage in machine learning <a href="https://www.nature.com/articles/s41534-017-0017-3" target="_blank">2017</a> </li>
+</ol>
+<h4 id="quantum-inspired-algorithms"><a name="quantum-inspired-algorithms" class="anchor-navigation-ex-anchor" href="#quantum-inspired-algorithms"><i class="fa fa-link" aria-hidden="true"></i></a>Quantum-inspired algorithms</h4>
+<ol>
+<li><a href="https://ewintang.com/assets/2019-01-28-an-overview-of-quantum-inspired-sampling.pdf" target="_blank">An overview of quantum-inspired classical sampling </a> Ewin Tang</li>
+</ol>
+<h3 id="linear-system"><a name="linear-system" class="anchor-navigation-ex-anchor" href="#linear-system"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.5. Linear system</h3>
+<ol>
+<li>A survey on HHL algorithm: From theory to application in quantum machine learning 2020 <a href="https://www.sciencedirect.com/science/article/pii/S037596012030462X#se0260" target="_blank">Physics Letters A</a><ul>
+<li><a href="https://github.com/hywong2/HHL_Example" target="_blank">code</a></li>
+</ul>
+</li>
+<li>Step-by-Step HHL Algorithm Walkthrough to Enhance the Understanding of Critical Quantum Computing Concepts 2021 <a href="https://arxiv.org/abs/2108.09004" target="_blank">arXiv:2108.09004</a></li>
+</ol>
+<h3 id="error-correction--stabilizer-codes"><a name="error-correction--stabilizer-codes" class="anchor-navigation-ex-anchor" href="#error-correction--stabilizer-codes"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.6. Error correction &amp; stabilizer codes</h3>
+<ol>
+<li>Daniel Gottesman &#x300A;An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation&#x300B;</li>
+<li>Roffe, Joschka. &#x300A;Quantum error correction: an introductory guide&#x300B; (2019)</li>
+</ol>
+<p>Book</p>
+<ol>
+<li>&#x300A;Quantum Error Correction&#x300B;Lidar D.A., Brun T.A &#xFF08;2013&#xFF09;</li>
+<li>&#x300A; Quantum Information Processing and Quantum Error Correction. An Engineering Approach&#x300B;Ivan Djordjevic (2012)</li>
+<li>&#x300A;Quantum Error Correction and Fault Tolerant Quantum Computing&#x300B;Frank Gaitan (2008)</li>
+</ol>
+<h4 id="experiment-realizing"><a name="experiment-realizing" class="anchor-navigation-ex-anchor" href="#experiment-realizing"><i class="fa fa-link" aria-hidden="true"></i></a>Experiment Realizing</h4>
+<ol>
+<li>Realizing topologically ordered states on a quantum processor (2021.12) <a href="https://arxiv.org/pdf/2104.01180.pdf" target="_blank">arxic.2104.01180</a><ul>
+<li>31 coupled 2D Supercondtor - Sycamore&#x3002;</li>
+<li>toric code</li>
+</ul>
+</li>
+<li>Probing topological spin liquids on a programmable quantum simulator (2021.12) <a href="https://arxiv.org/pdf/2104.04119.pdf" target="_blank">arxiv.2104.04119</a></li>
+</ol>
+<h3 id="stabilizer-codes"><a name="stabilizer-codes" class="anchor-navigation-ex-anchor" href="#stabilizer-codes"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.7. stabilizer codes</h3>
+<ol>
+<li>Topological defect network representations of fracton stabilizer codes (2021.12) <a href="https://arxiv.org/pdf/2112.14717.pdf" target="_blank">arxiv.2112.14717</a></li>
+</ol>
+<h4 id="finite-temperature"><a name="finite-temperature" class="anchor-navigation-ex-anchor" href="#finite-temperature"><i class="fa fa-link" aria-hidden="true"></i></a>Finite Temperature</h4>
+<ol>
+<li>Topological order in a 3D toric code at finite temperature (2008) <a href="https://arxiv.org/abs/0804.3591" target="_blank">arXiv:0804.3591</a> </li>
+<li>The Toric Code at Finite Temperature (2018) <a href="https://arxiv.org/pdf/2104.04119.pdf" target="_blank">UC Berkeley Electronic Theses and Dissertations</a></li>
+<li>Finite temperature protocols for stabilizer codes with few measurements<ul>
+<li>algorithms for finite temperature stabilizer error correction codes</li>
+<li>Engineering autonomous error correction in stabilizer codes at finite temperature <a href="https://arxiv.org/abs/1603.05005" target="_blank">arXiv:1603.05005</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="programming"><a name="programming" class="anchor-navigation-ex-anchor" href="#programming"><i class="fa fa-link" aria-hidden="true"></i></a>4.4.8. Programming</h3>
+<ol>
+<li>Hidary, J.D. &#x300A;Quantum Computing: An Applied Approach&#x300B; (2019) <a href="https://github.com/JackHidary/quantumcomputingbook" target="_blank">code Jupyter</a></li>
+<li>Hassi Norlen&#x300A;<a href="https://www.packtpub.com/product/quantum-computing-in-practice-with-qiskit-and-ibm-quantum-experience/9781838828448" target="_blank">Quantum Computing in Practice with Qiskit&#xAE; and IBM Quantum</a>&#x300B;(2020) <a href="https://github.com/PacktPublishing/Quantum-Computing-in-Practice-with-Qiskit-and-IBM-Quantum-Experience" target="_blank">code Python</a></li>
+<li>2019&#x5E74;&#xFF0C;&#x677E;&#x5C71;&#x6E56;&#x6625;&#x5B63;&#x5B66;&#x6821; <a href="https://github.com/QuantumBFS/SSSS#deep-learning-and-quantum-programming-a-spring-school" target="_blank">Deep Learning and Quantum Programming: A Spring School</a></li>
+<li>&#x300A;Quantum Computing Solutions: Solving Real-World Problems Using Quantum Computing and Algorithms&#x300B; by Bhagvan Kommadi <a href="https://github.com/Apress/Quantum-Computing-Solutions" target="_blank">code</a></li>
+<li>Hands-On Quantum Information Processing with Python(2021) <a href="https://github.com/PacktPublishing/Hands-On-Quantum-Information-Processing-with-Python" target="_blank">code</a></li>
+<li>Vladimir Silva&#x300A;Practical Quantum Computing for Developers Programming Quantum Rigs in the Cloud using Python, Quantum Assembly Language and IBM QExperience&#x300B;</li>
+<li>Mingsheng Ying&#x300A;Foundations of Quantum Programming&#x300B;</li>
+<li><a href="https://tensorflow.google.cn/quantum?hl=zh-cn" target="_blank">Tensor Flow Quantum</a></li>
+<li><a href="https://github.com/eth-sri/silq" target="_blank">Silq</a> quantum programming language developed by ETH Zurich</li>
+<li><a href="https://github.com/Apress/quantum-machine-learning-python" target="_blank">Quantum Machine Learning with Python</a> by Santanu Pattanayak</li>
+<li><a href="https://www.edx.org/course/quantum-machine-learning" target="_blank">Mooc in University of Toronto</a> Quantum Machine Learning <a href="https://github.com/vishwesh5/Quantum-Machine-Learning" target="_blank">&#x4EE3;&#x7801;</a></li>
+</ol>
+<h4 id="language"><a name="language" class="anchor-navigation-ex-anchor" href="#language"><i class="fa fa-link" aria-hidden="true"></i></a>language</h4>
+<ol>
+<li><a href="https://qiskit.org/documentation/machine-learning/tutorials/" target="_blank">Qiskit</a> Machine Learning Tutorials</li>
+<li><a href="https://hiq.huaweicloud.com/document" target="_blank">HiQ</a> &#x534E;&#x4E3A;</li>
+<li><a href="https://github.com/PaddlePaddle/Quantum" target="_blank">&#x98DE;&#x6868;</a> &#x767E;&#x5EA6;</li>
+</ol>
 
-	<div class="copyright">
-		<p>
-			 
-				&copy;2020 - 2021, content by JP. All Rights Reserved.
-			
-			
-				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
-			
-		</p>
-		<p>
-			
-
-	<!-- busuanzi -->
-	<!-- busuanzi -->
-
-
-
-			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
-			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
-		</p>
-	</div>		
-</footer>
-		
-
-<!-- love effect -->
-
-
-<!-- back to top -->
-
-	<div id="totop">
-	<span class="icon-circle-up"></span>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
 </div>
 
+                        </div>
+                    </div>
+                
+            </div>
 
+            
+                
+                
+                <a href="Chapter01/Chapter01.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 01quantum circuit model ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
 
-<!-- site analysis -->
-
-
-	<!-- site-analysis -->
-	
-	
-	
-	
-	
- 
-
-<!-- leancloud -->
-
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-  
-
-	<!--
-	时间：2018-10-3
-	描述：
-		插件名称：hexo-generator-search-zip
-		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
-		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
--->
-<div class="popup search-popup local-search-popup scrollbar" >
-	<div class="local-search-container">
-		<span class="popup-btn-close">
-      		ESC
-   		</span>
-		<div class="local-search-header">
-			<div class="input-prompt">				
-			</div>
-			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
-		</div>
-		<div class="local-search-body">
-			<div id="local-search-output"></div>
-		</div>
-		<div class="local-search-footer">
-			<div class="topN-post">				
-				
-								
-			</div>
-		</div>
-	</div>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"overview","level":"1.1","depth":1,"next":{"title":"01quantum circuit model ","level":"1.2","depth":1,"path":"Chapter01/Chapter01.md","ref":"Chapter01/Chapter01.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex-plus","theme-comscore","anchor-navigation-ex","toc","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-comscore":{},"katex-plus":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"JP","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Sample GitBook","gitbook":"*","description":"welcome to my land","extension":null},"file":{"path":"README.md","mtime":"2022-09-26T06:35:20.916Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-26T06:54:10.917Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
 </div>
 
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
 
-<script src="/plugin/search/ziploader.js"></script>
-<script src="/js/search.js"></script>
-
-
-<script type="text/javascript">
-	var search_path = 'search.json',
-		zip_Path = '/search.zip',
-		version_Path = '/searchVersion.txt',
-		input_Trigger = 'auto',
-		top_N = '2';
-
-	themeLocalSearch({
-		search_path, 
-		zip_Path, 
-		version_Path, 
-		input_Trigger, 
-		top_N
-	});
-</script>
-
-
-
-<script src="/plugin/chinese/chinese.js"></script>
-<script src="/plugin/imagelazyloader/yall.min.js"></script>
-<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
-<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
-<script src="/plugin/resizediv/resizediv.js"></script>
-<script src="/js/main.js"></script>
-
-	</body>	
+    </body>
 </html>
+
