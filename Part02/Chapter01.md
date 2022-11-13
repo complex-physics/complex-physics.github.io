@@ -111,6 +111,10 @@ To maximize the expectation value above, find good angles $\vec{\gamma}=\left(\g
 
 # Application
 
+1. Max Cut Problem
+2. Traverse Ising model
+3. The binary linear least squares (BLLS) problem
+
 ## Max Cut Problem
 
 ​	

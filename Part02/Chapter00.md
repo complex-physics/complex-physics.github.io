@@ -40,6 +40,15 @@ Variational Algorithms
 
 
 
+# Basic idea
+
+1. The cost function you select depends on your task
+2. Design short-depth quantum circuit to calculate your cost function
+3. Parameterized gate sequence to formulate Ansatz 
+4. Choose a classical optimizer to design the training algorithm 
+
+
+
 To be continued
 
 
